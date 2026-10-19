@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://pocketcat.app/</loc>
+    <lastmod>2026-10-19</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pocketcat.app/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://pocketcat.app/zh/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pocketcat.app/"/>
+  </url>
+  <url>
+    <loc>https://pocketcat.app/zh/</loc>
+    <lastmod>2026-10-19</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pocketcat.app/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://pocketcat.app/zh/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pocketcat.app/"/>
+  </url>
+  <url>
+    <loc>https://pocketcat.app/privacy.html</loc>
+    <lastmod>2026-10-19</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pocketcat.app/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://pocketcat.app/privacy-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pocketcat.app/privacy.html"/>
+  </url>
+  <url>
+    <loc>https://pocketcat.app/privacy-zh.html</loc>
+    <lastmod>2026-10-19</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pocketcat.app/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://pocketcat.app/privacy-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pocketcat.app/privacy.html"/>
+  </url>
+  <url>
+    <loc>https://pocketcat.app/support.html</loc>
+    <lastmod>2026-10-19</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pocketcat.app/support.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://pocketcat.app/support-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pocketcat.app/support.html"/>
+  </url>
+  <url>
+    <loc>https://pocketcat.app/support-zh.html</loc>
+    <lastmod>2026-10-19</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pocketcat.app/support.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://pocketcat.app/support-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pocketcat.app/support.html"/>
+  </url>
+</urlset>
