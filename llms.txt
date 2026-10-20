@@ -1,0 +1,42 @@
+# Maozai (猫在)
+
+> A kitten on your iPhone and Apple Watch: hungry when you should eat, moving when you move, asleep when you should be. Six free kittens, six more in boxes.
+
+On the App Store it is called “Maozai: Your Pocket Cat”, in Chinese “猫在：你的口袋猫”. Requires an iPhone with iOS 18.0 or later; the Apple Watch app needs watchOS 11.0 or later.
+
+Questions and answers, as on the website:
+
+- What is Maozai? Maozai (猫在, Chinese for “the cat is here”) is a virtual pet cat for iPhone and Apple Watch, listed on the App Store as “Maozai: Your Pocket Cat”. You bring home a kitten and it lives through the day alongside you: it gets hungry at mealtimes, thirsty between meals, moves when you move and goes to bed at night, so looking after it reminds you to eat, drink water and sleep. It is not related to other apps called Pocket Cat.
+- Does Maozai work on Apple Watch? Yes. The Apple Watch app shows the cat at a glance: hold to pet it, turn the Digital Crown to tease it, and answer its reminders with one tap. iPhone and watch stay in sync. You bring the cat home on iPhone first; after that the watch is optional, and Maozai works on iPhone alone.
+- Is Maozai free? Yes. It is free to download and has no ads. Six kittens, every reminder, the diary, the Apple Watch app and 20 AI chat replies a day are free. Two things are optional: mystery boxes with six more breeds, $1.99 each as one-time purchases, and Maozai Plus, $4.99 a month or $29.99 a year, which removes the daily chat limit (a fair-use cap of 600 messages a day applies). These are US prices; other regions differ.
+- How do the mystery boxes work? Each box holds one of six breed cats: Ragdoll, Minuet, Bengal, British Golden, American Shorthair or Norwegian Forest. Before you pay, the box shows who could be inside and the odds: every cat you don't have yet is equally likely, so 1 in 6 for the first box, 1 in 5 for the second, and so on. You never get a cat you already have, so six boxes ($11.94 in all) always bring all six. The cats you open are yours to keep, and on a new phone Restore Opened Boxes brings them back.
+- Do I need an account? No. There is no sign-up and no login: open the app and it works. Purchases go through your Apple Account.
+- What does Maozai read from Apple Health? Four things, and only with your permission: steps, exercise minutes, heart rate and activity rings. It only reads, never writes, and the data never leaves your devices. Every 2,000 steps earns the cat a fish treat, closing all three rings gets it a party hat, and if your heart is racing while you sit still, it comes to check on you.
+- Does it use AI, and what happens to what I write? The cat's chat replies come from an AI language model only after you say yes. Your messages then go to our server in the United States and on to an AI language model service, and are not kept. If you say no, the cat answers with simple rules on your phone and nothing you write leaves it. There are no ads, no tracking and no third-party software in the app.
+- What do I need to run it? An iPhone with iOS 18 or later. The Apple Watch app needs watchOS 11 or later and a paired iPhone. There is no Android version.
+- Which languages does it speak? English and Simplified Chinese. In chat the cat answers in your language.
+- Can I switch cats? Yes. In Settings › My Cats you can bring home any cat you have, as often as you like. Every cat keeps its own name, chats and diary, so switching never erases anything.
+- Is Maozai a medical or fitness app? No. Maozai is a companion, not a medical device, and nothing the cat says is medical advice. Its nudges to eat, drink water, move and sleep are reminders, not a health program.
+
+中文问答（与官网一致）：
+
+- 猫在是什么？ 猫在（Maozai）是一只住在 iPhone 和 Apple Watch 里的电子宠物猫，App Store 上的名字是「猫在：你的口袋猫」（英文 Maozai: Your Pocket Cat）。带一只小猫回家，它跟着你过一天：饭点会饿，两顿饭之间会渴，你动它也动，夜里要睡觉，照顾它就是在提醒自己吃饭、喝水、睡觉。它和其他叫 Pocket Cat 的应用没有关系。
+- 能在 Apple Watch 上用吗？ 能。手表上抬腕就能看到它：按住摸它，转数码表冠逗它，点一下回应它的提醒，iPhone 和手表保持同步。第一次要先在 iPhone 上带猫回家；之后手表不是必需的，只用 iPhone 也可以。
+- 要花钱吗？ 下载免费，没有广告。六只小猫、所有提醒、日记、Apple Watch 和每天 20 句 AI 聊天都免费。另有两项可选：纸箱盲盒装着另外六只品种猫，每盒 $1.99，一次性购买；「猫在 Plus」订阅每月 $4.99 或每年 $29.99，聊天不限句数（合理使用上限每天 600 句）。以上是美国区价格，其他地区会不同。
+- 盲盒是怎么回事？ 每盒装着六只品种猫中的一只：布偶、拿破仑、孟加拉豹猫、金渐层、美短、挪威森林猫。付款前就告诉你可能是谁、各自的概率：还没有的每只概率相同，第一盒 1/6，第二盒 1/5，依此类推。开过的不会再开到，所以六盒（共 $11.94）一定集齐六只。开到的猫一直是你的，换了新手机点「恢复已开的盲盒」就回来。
+- 需要注册账号吗？ 不需要。没有注册，也没有登录，打开就能用。购买走你的 Apple 账户。
+- 它会读取哪些健康数据？ 四样，而且要你允许：步数、锻炼时间、心率和健身圆环。只读不写，数据不会离开你的设备。每走 2000 步它多一条小鱼干，三个环都合上它戴帽子庆祝，你坐着不动心跳却很快，它会过来问问你。
+- 聊天用 AI 吗？我说的话去哪了？ 你同意之后，它的回答才由 AI 语言模型来写：你说的话会发到我们在美国的服务器，再交给 AI 语言模型服务，不会被保存。不同意的话，它用手机里的简单规则回你，你写的内容不会离开手机。App 里没有广告、没有跟踪，也没有任何第三方软件。
+- 需要什么设备？ iOS 18 或更高版本的 iPhone。手表 App 需要 watchOS 11 或更高版本，并和 iPhone 配对。没有安卓版。
+- 支持哪些语言？ 英文和简体中文。聊天时它用你说的语言回你。
+- 可以换猫吗？ 可以。在设置 › 我的猫里，已有的猫随时可以换回家，换多少次都行。每只猫都留着自己的名字、聊天和日记，换猫不会清空任何东西。
+- 它是医疗或健身 App 吗？ 不是。猫在是陪伴型的 App，不是医疗器械，它说的话也不是医疗建议。叫你吃饭、喝水、运动、睡觉，只是提醒，不是健康方案。
+
+## Pages
+
+- [Maozai website](https://pocketcat.app/): the cat's day, the cats, prices and privacy, with the questions above
+- [猫在官网](https://pocketcat.app/zh/): the same in Chinese
+- [Support](https://pocketcat.app/support.html): help with Apple Watch, Health, reminders, chat and purchases
+- [Privacy policy](https://pocketcat.app/privacy.html): what the app reads, sends and keeps
+- [Press kit](https://pocketcat.app/press.html): facts about the app and its developer, with the icon, screenshots and a video to download
+- [App Store](https://apps.apple.com/app/id6822157747): download Maozai: Your Pocket Cat
