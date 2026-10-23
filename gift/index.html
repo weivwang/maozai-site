@@ -67,7 +67,7 @@
   var $ = function (id) { return document.getElementById(id); };
   var fill = function (s, k, v) { return s.replace("{" + k + "}", v); };
   var code = (new URLSearchParams(location.search).get("c") || "").toUpperCase().replace(/[^A-Z2-9]/g, "");
-  var valid = /^[ABCDEFGHJKLMNPQRSTUVWXYZ23456789]{8}$/.test(code);
+  var valid = /^[ABCDEFGHJKLMNPQRSTUVWXYZ23456789]{12}$/.test(code);
   $("title").textContent = t.title;
   $("open").textContent = t.open;
   $("store").textContent = t.store;
@@ -75,7 +75,7 @@
   if (/MicroMessenger/i.test(navigator.userAgent)) { $("wechat").textContent = t.wechat; $("wechat").hidden = false; }
   if (!valid) { $("state").textContent = t.missing; $("state").hidden = false; $("open").hidden = true; $("code").hidden = true; return; }
   $("open").href = "maozai://gift/" + code;
-  $("code").textContent = fill(t.code, "code", code.slice(0, 4) + "-" + code.slice(4));
+  $("code").textContent = fill(t.code, "code", code.match(/.{4}/g).join("-"));
   fetch("https://maozai-api.getpocketdesk.com/v1/gift/" + code).then(function (r) { return r.json().then(function (j) { return [r.status, j]; }); })
     .then(function (res) {
       var status = res[0], gift = res[1];
