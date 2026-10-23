@@ -2,11 +2,11 @@
 
 > A kitten on your iPhone and Apple Watch: hungry when you should eat, moving when you move, asleep when you should be. Six free kittens, six more in boxes.
 
-On the App Store it is called “Maozai: Your Pocket Cat”, in Chinese “猫在：你的口袋猫”. Requires an iPhone with iOS 18.0 or later; the Apple Watch app needs watchOS 11.0 or later.
+On the App Store it is called “Maozai: Virtual Pet Cat”, in Chinese “猫在：你的口袋猫”. Requires an iPhone with iOS 18.0 or later; the Apple Watch app needs watchOS 11.0 or later.
 
 Questions and answers, as on the website:
 
-- What is Maozai? Maozai (猫在, Chinese for “the cat is here”) is a virtual pet cat for iPhone and Apple Watch, listed on the App Store as “Maozai: Your Pocket Cat”. You bring home a kitten and it lives through the day alongside you: it gets hungry at mealtimes, thirsty between meals, moves when you move and goes to bed at night, so looking after it reminds you to eat, drink water and sleep. It is not related to other apps called Pocket Cat.
+- What is Maozai? Maozai (猫在, Chinese for “the cat is here”) is a virtual pet cat for iPhone and Apple Watch, listed on the App Store as “Maozai: Virtual Pet Cat”. You bring home a kitten and it lives through the day alongside you: it gets hungry at mealtimes, thirsty between meals, moves when you move and goes to bed at night, so looking after it reminds you to eat, drink water and sleep. Until October 2026 it was listed as “Maozai: Your Pocket Cat”; it is not related to other apps called Pocket Cat.
 - Does Maozai work on Apple Watch? Yes. The Apple Watch app shows the cat at a glance: hold to pet it, turn the Digital Crown to tease it, and answer its reminders with one tap. iPhone and watch stay in sync. You bring the cat home on iPhone first; after that the watch is optional, and Maozai works on iPhone alone.
 - Is Maozai free? Yes. It is free to download and has no ads. Six kittens, every reminder, the diary, the Apple Watch app and 20 AI chat replies a day are free. Two things are optional: mystery boxes with six more breeds, $1.99 each as one-time purchases, and Maozai Plus, $4.99 a month or $29.99 a year, which removes the daily chat limit (a fair-use cap of 600 messages a day applies). These are US prices; other regions differ.
 - How do the mystery boxes work? Each box holds one of six breed cats: Ragdoll, Minuet, Bengal, British Golden, American Shorthair or Norwegian Forest. Before you pay, the box shows who could be inside and the odds: every cat you don't have yet is equally likely, so 1 in 6 for the first box, 1 in 5 for the second, and so on. You never get a cat you already have, so six boxes ($11.94 in all) always bring all six. The cats you open are yours to keep, and on a new phone Restore Opened Boxes brings them back.
@@ -20,7 +20,7 @@ Questions and answers, as on the website:
 
 中文问答（与官网一致）：
 
-- 猫在是什么？ 猫在（Maozai）是一只住在 iPhone 和 Apple Watch 里的电子宠物猫，App Store 上的名字是「猫在：你的口袋猫」（英文 Maozai: Your Pocket Cat）。带一只小猫回家，它跟着你过一天：饭点会饿，两顿饭之间会渴，你动它也动，夜里要睡觉，照顾它就是在提醒自己吃饭、喝水、睡觉。它和其他叫 Pocket Cat 的应用没有关系。
+- 猫在是什么？ 猫在（Maozai）是一只住在 iPhone 和 Apple Watch 里的电子宠物猫，App Store 上的名字是「猫在：你的口袋猫」（英文 Maozai: Virtual Pet Cat，2026 年 10 月以前叫 Maozai: Your Pocket Cat）。带一只小猫回家，它跟着你过一天：饭点会饿，两顿饭之间会渴，你动它也动，夜里要睡觉，照顾它就是在提醒自己吃饭、喝水、睡觉。它和其他叫 Pocket Cat 的应用没有关系。
 - 能在 Apple Watch 上用吗？ 能。手表上抬腕就能看到它：按住摸它，转数码表冠逗它，点一下回应它的提醒，iPhone 和手表保持同步。第一次要先在 iPhone 上带猫回家；之后手表不是必需的，只用 iPhone 也可以。
 - 要花钱吗？ 下载免费，没有广告。六只小猫、所有提醒、日记、Apple Watch 和每天 20 句 AI 聊天都免费。另有两项可选：纸箱盲盒装着另外六只品种猫，每盒 $1.99，一次性购买；「猫在 Plus」订阅每月 $4.99 或每年 $29.99，聊天不限句数（合理使用上限每天 600 句）。以上是美国区价格，其他地区会不同。
 - 盲盒是怎么回事？ 每盒装着六只品种猫中的一只：布偶、拿破仑、孟加拉豹猫、金渐层、美短、挪威森林猫。付款前就告诉你可能是谁、各自的概率：还没有的每只概率相同，第一盒 1/6，第二盒 1/5，依此类推。开过的不会再开到，所以六盒（共 $11.94）一定集齐六只。开到的猫一直是你的，换了新手机点「恢复已开的盲盒」就回来。
@@ -40,4 +40,4 @@ Questions and answers, as on the website:
 - [Privacy policy](https://pocketcat.app/privacy.html): what the app reads, sends and keeps
 - [Press kit](https://pocketcat.app/press.html): facts about the app and its developer, with the icon, screenshots and a video to download
 - [Virtual pets for Apple Watch](https://pocketcat.app/apple-watch-pets.html): written by Maozai's developer, with prices and ratings from the App Store ([in Chinese](https://pocketcat.app/apple-watch-pets-zh.html))
-- [App Store](https://apps.apple.com/app/id6822157747): download Maozai: Your Pocket Cat
+- [App Store](https://apps.apple.com/app/id6822157747): download Maozai: Virtual Pet Cat
