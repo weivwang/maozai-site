@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A box for you · Maozai</title>
+<meta name="description" content="A friend sent you a mystery box in Maozai, with a cat you don't have yet.">
+<meta name="robots" content="noindex">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Maozai">
+<meta property="og:title" content="A box for you · 有人寄给你一个纸箱">
+<meta property="og:description" content="Inside is a cat you don't have yet. 里面是一只你还没有的猫。">
+<meta property="og:image" content="https://pocketcat.app/assets/gift-box.jpg">
+<meta name="apple-itunes-app" content="app-id=6822157747">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<style>
+  body { margin: 0; background: #fff; color: #1c1c1e; font: 17px/1.6 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", sans-serif; }
+  main { max-width: 520px; margin: 0 auto; padding: 32px 20px 64px; text-align: center; }
+  .box { position: relative; display: inline-block; margin-top: 8px; }
+  .box img { width: 240px; max-width: 70vw; height: auto; display: block; }
+  .label { position: absolute; right: 8px; top: 44px; transform: rotate(-4deg); background: #fbf8f2; border: 1px solid #f0eadf;
+           border-radius: 4px; padding: 3px 8px; font: 13px/1.4 "Songti SC", Georgia, serif; color: #2b2621; }
+  h1 { font: 26px/1.3 "Songti SC", Georgia, serif; margin: 16px 0 8px; }
+  .note { font: 18px/1.5 "Songti SC", Georgia, serif; margin: 0 0 4px; }
+  .from { color: #8a8a8e; font-size: 14px; margin: 0 0 20px; }
+  .button { display: block; text-decoration: none; color: #fff; background: #f59a3d; border-radius: 999px; padding: 13px 0; font-weight: 600; margin: 10px 0; }
+  .button.plain { background: #f1f1f1; color: #1c1c1e; }
+  .code { font: 15px ui-monospace, Menlo, monospace; letter-spacing: 1px; background: #f6f6f6; border-radius: 12px; padding: 10px; margin: 18px 0 6px; }
+  .small { color: #8a8a8e; font-size: 14px; }
+  .wechat { background: #fdf6ee; color: #8a5a2b; border-radius: 14px; padding: 12px 14px; font-size: 15px; text-align: left; margin-bottom: 16px; }
+  [hidden] { display: none !important; }
+</style>
+</head>
+<body>
+<main>
+  <div id="wechat" class="wechat" hidden></div>
+  <div class="box"><img src="/assets/gift-box.jpg" alt="" width="240" height="240"><span id="label" class="label" hidden></span></div>
+  <h1 id="title"></h1>
+  <p id="note" class="note" hidden></p>
+  <p id="from" class="from" hidden></p>
+  <p id="state" class="small" hidden></p>
+  <div id="actions">
+    <a id="open" class="button" href="#"></a>
+    <a id="store" class="button plain" href="https://apps.apple.com/app/id6822157747"></a>
+    <div id="code" class="code"></div>
+    <p id="how" class="small"></p>
+  </div>
+</main>
+<script>
+(function () {
+  var zh = /^zh/i.test(navigator.language || "");
+  var t = zh ? {
+    title: "有人寄给你一个纸箱", titleFrom: "{name} 寄给你一个纸箱", from: "寄件人：{name}",
+    open: "用猫在打开", store: "在 App Store 下载猫在", code: "礼物码 {code}",
+    how: "还没装猫在：先下载，装好后回到这里再点「用猫在打开」，或在 App 里「我的猫 › 收到礼物码？」输入礼物码。里面是一只你还没有的猫，会放在你自己的 Apple 账号上。",
+    wechat: "微信里打不开 App：点右上角「…」，选「在浏览器打开」。也可以装好猫在后，在「我的猫 › 收到礼物码？」里输入礼物码。",
+    opened: "这个纸箱已经被拆开了。", expired: "这个纸箱过期了。", missing: "没有找到这个纸箱，看看链接是不是完整。", offline: "暂时读不到纸箱的信息，但礼物码照样能用。"
+  } : {
+    title: "Someone sent you a box", titleFrom: "{name} sent you a box", from: "From: {name}",
+    open: "Open in Maozai", store: "Get Maozai on the App Store", code: "Gift code {code}",
+    how: "Don't have Maozai yet? Download it, then come back and tap Open in Maozai, or type the gift code in the app under My Cats › Got a gift code? Inside is a cat you don't have yet, on your own Apple account.",
+    wechat: "WeChat can't open apps: tap ··· at the top right and choose Open in Browser. Or type the gift code in Maozai under My Cats › Got a gift code?",
+    opened: "This box has already been opened.", expired: "This box has expired.", missing: "Couldn't find this box. Check that the link is complete.", offline: "Couldn't load the box's details, but the gift code still works."
+  };
+  document.documentElement.lang = zh ? "zh-Hans" : "en";
+  var $ = function (id) { return document.getElementById(id); };
+  var fill = function (s, k, v) { return s.replace("{" + k + "}", v); };
+  var code = (new URLSearchParams(location.search).get("c") || "").toUpperCase().replace(/[^A-Z2-9]/g, "");
+  var valid = /^[ABCDEFGHJKLMNPQRSTUVWXYZ23456789]{8}$/.test(code);
+  $("title").textContent = t.title;
+  $("open").textContent = t.open;
+  $("store").textContent = t.store;
+  $("how").textContent = t.how;
+  if (/MicroMessenger/i.test(navigator.userAgent)) { $("wechat").textContent = t.wechat; $("wechat").hidden = false; }
+  if (!valid) { $("state").textContent = t.missing; $("state").hidden = false; $("open").hidden = true; $("code").hidden = true; return; }
+  $("open").href = "maozai://gift/" + code;
+  $("code").textContent = fill(t.code, "code", code.slice(0, 4) + "-" + code.slice(4));
+  fetch("https://maozai-api.getpocketdesk.com/v1/gift/" + code).then(function (r) { return r.json().then(function (j) { return [r.status, j]; }); })
+    .then(function (res) {
+      var status = res[0], gift = res[1];
+      if (status === 404) { $("state").textContent = t.missing; $("state").hidden = false; $("actions").hidden = true; return; }
+      if (status !== 200) { $("state").textContent = t.offline; $("state").hidden = false; return; }
+      if (gift.sender) {
+        $("title").textContent = fill(t.titleFrom, "name", gift.sender);
+        $("label").textContent = fill(t.from, "name", gift.sender); $("label").hidden = false;
+        $("from").textContent = "—— " + gift.sender; $("from").hidden = !gift.note;
+      }
+      if (gift.note) { $("note").textContent = "“" + gift.note + "”"; $("note").hidden = false; }
+      if (gift.opened || gift.expired) {
+        $("state").textContent = gift.opened ? t.opened : t.expired; $("state").hidden = false;
+        $("code").hidden = true; $("how").hidden = true; $("open").hidden = true;
+      }
+    })
+    .catch(function () { $("state").textContent = t.offline; $("state").hidden = false; });
+})();
+</script>
+</body>
+</html>

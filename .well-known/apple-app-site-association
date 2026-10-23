@@ -1,0 +1,12 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["8K299F2832.app.maozai.ios"],
+        "components": [
+          { "/": "/gift/*", "comment": "A gift link opens the gift in the app" }
+        ]
+      }
+    ]
+  }
+}
