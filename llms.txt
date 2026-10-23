@@ -39,4 +39,5 @@ Questions and answers, as on the website:
 - [Support](https://pocketcat.app/support.html): help with Apple Watch, Health, reminders, chat and purchases
 - [Privacy policy](https://pocketcat.app/privacy.html): what the app reads, sends and keeps
 - [Press kit](https://pocketcat.app/press.html): facts about the app and its developer, with the icon, screenshots and a video to download
+- [Virtual pets for Apple Watch](https://pocketcat.app/apple-watch-pets.html): written by Maozai's developer, with prices and ratings from the App Store ([in Chinese](https://pocketcat.app/apple-watch-pets-zh.html))
 - [App Store](https://apps.apple.com/app/id6822157747): download Maozai: Your Pocket Cat
