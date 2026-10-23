@@ -28,7 +28,8 @@
   .button.plain { background: #f1f1f1; color: #1c1c1e; }
   .code { font: 15px ui-monospace, Menlo, monospace; letter-spacing: 1px; background: #f6f6f6; border-radius: 12px; padding: 10px; margin: 18px 0 6px; }
   .small { color: #8a8a8e; font-size: 14px; }
-  .wechat { background: #fdf6ee; color: #8a5a2b; border-radius: 14px; padding: 12px 14px; font-size: 15px; text-align: left; margin-bottom: 16px; }
+  .wechat, .update { background: #fdf6ee; color: #8a5a2b; border-radius: 14px; padding: 12px 14px; font-size: 15px; text-align: left; margin-bottom: 16px; }
+  .update { margin: 4px 0 12px; }
   [hidden] { display: none !important; }
 </style>
 </head>
@@ -40,6 +41,7 @@
   <p id="note" class="note" hidden></p>
   <p id="from" class="from" hidden></p>
   <p id="state" class="small" hidden></p>
+  <p id="update" class="update" hidden></p>
   <div id="actions">
     <a id="open" class="button" href="#"></a>
     <a id="store" class="button plain" href="https://apps.apple.com/app/id6822157747"></a>
@@ -55,13 +57,15 @@
     open: "用猫在打开", store: "在 App Store 下载猫在", code: "礼物码 {code}",
     how: "还没装猫在：先下载，装好后回到这里再点「用猫在打开」，或在 App 里「我的猫 › 收到礼物码？」输入礼物码。里面是一只你还没有的猫，会放在你自己的 Apple 账号上。",
     wechat: "微信里打不开 App：点右上角「…」，选「在浏览器打开」。也可以装好猫在后，在「我的猫 › 收到礼物码？」里输入礼物码。",
-    opened: "这个纸箱已经被拆开了。", expired: "这个纸箱过期了。", missing: "没有找到这个纸箱，看看链接是不是完整。", offline: "暂时读不到纸箱的信息，但礼物码照样能用。"
+    opened: "这个纸箱已经被拆开了。", expired: "这个纸箱过期了。", missing: "没有找到这个纸箱，看看链接是不是完整。", offline: "暂时读不到纸箱的信息，但礼物码照样能用。",
+    update: "要用猫在 {v} 或更新的版本才能拆。已经装了猫在的话，先去 App Store 更新。", storeUpdate: "在 App Store 下载或更新猫在"
   } : {
     title: "Someone sent you a box", titleFrom: "{name} sent you a box", from: "From: {name}",
     open: "Open in Maozai", store: "Get Maozai on the App Store", code: "Gift code {code}",
     how: "Don't have Maozai yet? Download it, then come back and tap Open in Maozai, or type the gift code in the app under My Cats › Got a gift code? Inside is a cat you don't have yet, on your own Apple account.",
     wechat: "WeChat can't open apps: tap ··· at the top right and choose Open in Browser. Or type the gift code in Maozai under My Cats › Got a gift code?",
-    opened: "This box has already been opened.", expired: "This box has expired.", missing: "Couldn't find this box. Check that the link is complete.", offline: "Couldn't load the box's details, but the gift code still works."
+    opened: "This box has already been opened.", expired: "This box has expired.", missing: "Couldn't find this box. Check that the link is complete.", offline: "Couldn't load the box's details, but the gift code still works.",
+    update: "You need Maozai {v} or later to open this box. If you have Maozai already, update it on the App Store first.", storeUpdate: "Get or update Maozai on the App Store"
   };
   document.documentElement.lang = zh ? "zh-Hans" : "en";
   var $ = function (id) { return document.getElementById(id); };
@@ -87,6 +91,10 @@
         $("from").textContent = "—— " + gift.sender; $("from").hidden = !gift.note;
       }
       if (gift.note) { $("note").textContent = "“" + gift.note + "”"; $("note").hidden = false; }
+      if (typeof gift.needs_version === "string" && /^[0-9.]{1,12}$/.test(gift.needs_version) && !gift.opened && !gift.expired) {
+        $("update").textContent = fill(t.update, "v", gift.needs_version); $("update").hidden = false;
+        $("store").textContent = t.storeUpdate;
+      }
       if (gift.opened || gift.expired) {
         $("state").textContent = gift.opened ? t.opened : t.expired; $("state").hidden = false;
         $("code").hidden = true; $("how").hidden = true; $("open").hidden = true;
